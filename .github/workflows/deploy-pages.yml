@@ -26,7 +26,7 @@ jobs:
           flutter-version: ${{ steps.fvm.outputs.FLUTTER_VERSION }}
           channel: stable
       - run: flutter pub get
-      - run: flutter build web --release --base-href "vive-cording-trial"
+      - run: flutter build web --release --base-href "/vive-cording-trial/"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: build/web
